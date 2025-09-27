@@ -1,0 +1,395 @@
+/* Franchise Page Styles */
+
+
+/* Franchise Hero Section */
+
+.franchise-hero {
+    margin-top: 83px;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #b40c25 0%, #991b1bb5 100%);
+    color: white;
+    overflow: hidden;
+}
+
+.franchise-hero-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.franchise-hero-text h1 {
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    font-family: 'Georgia', serif;
+}
+
+.franchise-hero-text .highlight {
+    color: #1e3932;
+    font-weight: 600;
+}
+
+.franchise-hero-text p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e3932;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 14px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.franchise-hero-image {
+    position: relative;
+}
+
+.franchise-hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Why Choose Us Section */
+
+.why-choose-us {
+    padding: 80px 40px;
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 300;
+    color: #b40c25;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Georgia', serif;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 40px 32px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(180, 12, 37, 0.15);
+}
+
+.benefit-icon {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.benefit-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e3932;
+    margin-bottom: 16px;
+}
+
+.benefit-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Franchise Form Section */
+
+.franchise-form-section {
+    padding: 80px 40px;
+    background: white;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    padding: 60px;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-header h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #1e3932;
+    margin-bottom: 16px;
+    font-family: 'Georgia', serif;
+}
+
+.form-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+.franchise-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #1e3932;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #b40c25;
+    box-shadow: 0 0 0 3px rgba(180, 12, 37, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.submit-btn {
+    background: #b40c25;
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+.submit-btn:hover {
+    background: #991b1b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(180, 12, 37, 0.3);
+}
+
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* Investment Details Section */
+
+.investment-details {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #b40c25 0%, #991b1b 100%);
+    color: white;
+}
+
+.investment-details .section-title {
+    color: white;
+}
+
+.investment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.investment-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 32px;
+    border-radius: 16px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.investment-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffb3c1;
+}
+
+.investment-amount {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.investment-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.investment-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.9;
+}
+
+.investment-card li:last-child {
+    border-bottom: none;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .franchise-hero {
+        padding: 40px 20px;
+    }
+    .franchise-hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    .franchise-hero-text h1 {
+        font-size: 36px;
+    }
+    .hero-stats {
+        justify-content: center;
+        gap: 24px;
+    }
+    .why-choose-us,
+    .franchise-form-section,
+    .investment-details {
+        padding: 40px 20px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .form-container {
+        padding: 40px 24px;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .benefits-grid,
+    .investment-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .franchise-hero-text h1 {
+        font-size: 28px;
+    }
+    .franchise-hero-text p {
+        font-size: 16px;
+    }
+    .hero-stats {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .form-container {
+        padding: 32px 20px;
+    }
+    .form-header h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* Footer Bottom Override */
+
+.footer-bottom {
+    padding-bottom: 0px !important;
+}

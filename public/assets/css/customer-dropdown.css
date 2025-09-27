@@ -1,0 +1,147 @@
+/* Customer Dropdown Styles */
+.customer-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.customer-name-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: #fff;
+    border: 2px solid #b40c25;
+    border-radius: 25px;
+    color: #b40c25;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.customer-name-btn:hover {
+    background: #b40c25;
+    color: #fff;
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
+.customer-name-btn.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.customer-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.customer-dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-form {
+    margin: 0;
+}
+
+.logout-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    color: #b40c25;
+}
+
+/* Mobile Customer Styles */
+.mobile-customer {
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.mobile-customer-name {
+    font-weight: 600;
+    color: #b40c25;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.mobile-menu-item {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-menu-item:hover {
+    background-color: #f8f9fa;
+}
+
+.mobile-logout-form {
+    margin: 0;
+}
+
+.mobile-logout-btn {
+    width: 100%;
+    text-align: left;
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    color: #b40c25;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.mobile-logout-btn:hover {
+    background-color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .customer-dropdown {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-customer {
+        display: none;
+    }
+}

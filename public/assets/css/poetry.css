@@ -1,0 +1,276 @@
+ /* Main Content */
+ 
+ .main {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 6rem 2rem 2rem;
+ }
+ /* main hero section */
+ 
+ .poetry-hero {
+     padding: 150px 20px 100px;
+     background: #fafafa;
+ }
+ 
+ .poetry-container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 40px;
+     max-width: 1200px;
+     margin: 0 auto;
+     flex-wrap: wrap;
+ }
+ 
+ .poetry-text {
+     flex: 1;
+     min-width: 300px;
+ }
+ 
+ .poetry-text h1 {
+     font-size: 2.5rem;
+     color: #b40c25;
+     margin-bottom: 20px;
+     font-family: "Playfair Display", serif;
+ }
+ 
+ .poetry-text p {
+     font-size: 1.1rem;
+     color: #444;
+     line-height: 1.6;
+     margin-bottom: 25px;
+ }
+ 
+ .poetry-text .btn {
+     padding: 12px 24px;
+     background: #b40c25;
+     color: #fff;
+     border-radius: 6px;
+     font-weight: 500;
+     text-decoration: none;
+     transition: background 0.3s ease;
+ }
+ 
+ .poetry-text .btn:hover {
+     background: #8c091d;
+ }
+ 
+ .poetry-image {
+     flex: 1;
+     min-width: 280px;
+     text-align: center;
+ }
+ 
+ .poetry-image img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 12px;
+     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+ }
+ /* ---------- Responsive ---------- */
+ 
+ @media (max-width: 768px) {
+     .poetry-container {
+         flex-direction: column;
+         text-align: center;
+     }
+     .poetry-text h1 {
+         font-size: 2rem;
+     }
+     .poetry-text p {
+         font-size: 1rem;
+     }
+     .poetry-text .btn {
+         display: inline-block;
+     }
+ }
+ /* Hero Section */
+ 
+ .hero {
+     text-align: center;
+     margin-bottom: 4rem;
+ }
+ 
+ .hero h2 {
+     font-size: clamp(2rem, 5vw, 3.5rem);
+     color: #b40c25;
+     margin-bottom: 1rem;
+     position: relative;
+ }
+ 
+ .hero p {
+     font-size: clamp(1rem, 2.5vw, 1.3rem);
+     color: #5d4e37;
+     max-width: 600px;
+     margin: 0 auto;
+     font-style: italic;
+ }
+ /* Poetry Cards */
+ 
+ .poetry-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+     gap: 2rem;
+     margin-bottom: 4rem;
+ }
+ 
+ .poetry-card {
+     background: white;
+     border-radius: 15px;
+     padding: 2rem;
+     box-shadow: 0 10px 30px rgba(180, 12, 37, 0.1);
+     transition: all 0.3s ease;
+     border: 1px solid rgba(180, 12, 37, 0.1);
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ .poetry-card::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background: linear-gradient(90deg, #b40c25, #d4154f);
+ }
+ 
+ .poetry-card:hover {
+     transform: translateY(-10px) scale(1.02);
+     box-shadow: 0 20px 40px rgba(180, 12, 37, 0.2);
+ }
+ 
+ .poem-title {
+     font-size: 1.5rem;
+     color: #b40c25;
+     margin-bottom: 1rem;
+     text-align: center;
+     position: relative;
+ }
+ 
+ .poem-title::after {
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 50px;
+     height: 2px;
+     background: #b40c25;
+ }
+ 
+ .poem-text {
+     font-size: 1rem;
+     line-height: 1.8;
+     color: #2c1810;
+     font-style: italic;
+     text-align: center;
+ }
+ 
+ .poem-author {
+     text-align: right;
+     margin-top: 1rem;
+     font-size: 0.9rem;
+     color: #8a0a1c;
+     font-weight: 500;
+ }
+ /* Featured Section */
+ 
+ .featured {
+     background: linear-gradient(135deg, #b40c25 0%, #8a0a1c 100%);
+     color: white;
+     padding: 3rem 2rem;
+     margin: 4rem 0;
+     border-radius: 20px;
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ .featured::before {
+     content: '☕';
+     position: absolute;
+     font-size: 15rem;
+     opacity: 0.1;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     animation: pulse 3s ease-in-out infinite;
+ }
+ 
+ @keyframes pulse {
+     0%,
+     100% {
+         transform: translate(-50%, -50%) scale(1);
+     }
+     50% {
+         transform: translate(-50%, -50%) scale(1.1);
+     }
+ }
+ 
+ .featured-content {
+     position: relative;
+     z-index: 2;
+ }
+ 
+ .featured h3 {
+     font-size: clamp(1.8rem, 4vw, 2.5rem);
+     margin-bottom: 1rem;
+ }
+ 
+ .featured-poem {
+     font-size: clamp(1rem, 2.5vw, 1.2rem);
+     line-height: 1.8;
+     font-style: italic;
+     max-width: 800px;
+     margin: 0 auto;
+ }
+ /* Coffee Facts */
+ 
+ .facts {
+     background: rgba(180, 12, 37, 0.05);
+     padding: 3rem 2rem;
+     border-radius: 20px;
+     margin: 4rem 0;
+ }
+ 
+ .facts h3 {
+     text-align: center;
+     color: #b40c25;
+     font-size: 2rem;
+     margin-bottom: 2rem;
+ }
+ 
+ .facts-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 2rem;
+ }
+ 
+ .fact-card {
+     background: white;
+     padding: 1.5rem;
+     border-radius: 15px;
+     text-align: center;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease;
+ }
+ 
+ .fact-card:hover {
+     transform: translateY(-5px);
+ }
+ 
+ .fact-icon {
+     font-size: 3rem;
+     margin-bottom: 1rem;
+ }
+ 
+ .fact-text {
+     color: #2c1810;
+     font-size: 0.95rem;
+ }
+ /* Footer */
+ 
+ .footer-bottom {
+     padding-bottom: 0px !important;
+ }

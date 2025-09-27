@@ -1,0 +1,163 @@
+  /* Hero Section */
+  
+  .blog-hero {
+      position: relative;
+      padding: 150px 20px 100px;
+      background: url('../image/first_hero..jpeg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+      background-size: 100% 100%;
+  }
+  
+  .blog-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+  }
+  
+  .blog-hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeInDown 1s ease-out;
+  }
+  
+  .blog-hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .blog-hero p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .slogan {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      font-style: italic;
+      opacity: 0.9;
+  }
+  /* Microphone Section */
+  
+  .microphone-section {
+      padding: 80px 0;
+      background: white;
+  }
+  
+  .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #333;
+      position: relative;
+  }
+  
+  .section-title::after {
+      content: '';
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(45deg, #b40c25, #e63946);
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  .microphone-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+  }
+  
+  .microphone-card {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #f0f0f0;
+  }
+  
+  .microphone-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .mic-icon {
+      font-size: 3rem;
+      color: #b40c25;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+  
+  .mic-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #333;
+      text-align: center;
+  }
+  
+  .mic-description {
+      color: #666;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+  }
+  
+  .mic-price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #ff6b6b;
+      text-align: center;
+  }
+  /* About Section */
+  
+  .about-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c75a5a 100%);
+  }
+  
+  .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+  }
+  
+  .about-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+  }
+  
+  .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 1.5rem;
+  }
+  
+  .about-image {
+      text-align: center;
+      font-size: 8rem;
+      color: #b40c25;
+      opacity: 0.7;
+  }
+  /* Footer */
+  
+  .footer-bottom {
+      padding-bottom: 0px !important;
+  }

@@ -1,0 +1,192 @@
+/* General Styles & Fonts */
+
+body {
+    background-color: #fff;
+    color: #2d2d2d;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3 {
+    visibility: hidden;
+}
+
+
+/* Trust Hero Section */
+
+.trust-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 100px 20px;
+    background: url('../image/section5.jpeg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+
+.trust-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.trust-hero-content {
+    position: relative;
+    max-width: 800px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.trust-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.trust-hero p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Intro Section */
+
+.trust-intro {
+    padding: 6rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.trust-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.trust-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* Pillars Section */
+
+.pillars-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.pillars-section h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pillar-card {
+    text-align: center;
+}
+
+.pillar-card .icon {
+    font-size: 3rem;
+    color: #b40c25;
+    margin-bottom: 1rem;
+}
+
+.pillar-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.pillar-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* CTA Section */
+
+.cta-section {
+    padding: 6rem 2rem;
+    background-color: #3a2d21;
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+
+/* Animations */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .trust-hero {
+        min-height: 50vh;
+    }
+    .trust-hero h1 {
+        font-size: 3rem;
+    }
+    .trust-hero p {
+        font-size: 1.2rem;
+    }
+    .trust-intro,
+    .pillars-section,
+    .cta-section {
+        padding: 4rem 1.5rem;
+    }
+}
+
+.footer-bottom {
+    padding-bottom: 0px !important;
+}
