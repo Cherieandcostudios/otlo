@@ -2,10 +2,10 @@ FROM php:8.3-apache
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    git unzip libpq-dev libonig-dev libxml2-dev zip curl \
+    git unzip libonig-dev libxml2-dev zip curl \
     && docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd
 
-# Enable Apache rewrite
+# Enable Apache rewrite module
 RUN a2enmod rewrite
 
 # Set working directory
@@ -18,8 +18,11 @@ COPY . .
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 RUN composer install --no-dev --optimize-autoloader
 
-# Fix permissions
+# Fix permissions for Laravel storage & cache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
+# Expose port 80
 EXPOSE 80
+
+# Start Apache server
 CMD ["apache2-foreground"]
